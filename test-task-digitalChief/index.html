@@ -14,14 +14,14 @@
         <div class="header__social">
             <p>Социальные сети</p>
             <div class="technical"></div>
-            <a class="header__social-link" href="">
-                <img src="./images/Github.svg" />
+            <a class="header__social-link" href="https://github.com/" target="_blank">
+                <img src="./images/Github.svg" alt="иконка github" />
             </a>
-            <a class="header__social-link" href="">
-                <img src="./images/Instagram.svg" />
+            <a class="header__social-link" href="https://www.instagram.com/" target="_blank">
+                <img src="./images/Instagram.svg" alt="иконка Instagram" />
             </a>
-            <a class="header__social-link" href="">
-                <img src="./images/Facebook.svg" />
+            <a class="header__social-link" href="https://www.facebook.com/" target="_blank">
+                <img src="./images/Facebook.svg" alt="иконка facebook" />
             </a>
         </div>
         <div class="header__title">
@@ -33,12 +33,83 @@
                 из города Москва
             </h1>
             <div class="header__title-navigtion">
-                <a class="header__navigation-link" href="">Портфолио</a>
-                <a class="header__navigation-link" href="">Про меня</a>
+                <a class="header__navigation-link" href="#">Портфолио</a>
+                <a class="header__navigation-link" href="#">Про меня</a>
             </div>
         </div>
+        <div class="wrapper">
+            <header class="burger">
+                <div class="burger__conteiner">
+                    <div class="burger__body">
+                        <div class="burger__cross">
+                            <span></span>
+                        </div>
+                        <div class="burger__cross unactive">
+                            <span></span>
+                        </div>
+                        <nav class="burger__menu">
+                            <ul class="burger__list">
+                                <li class="header__list-item">
+                                    <div class="technical"></div>
+                                    <a class="link" href="#">
+                                        Про меня
+                                    </a>
+                                </li>
+                                <li class="header__list-item">
+                                    <div class="technical"></div>
+                                    <a class="link" href="#experience">
+                                        Мой опыт
+                                    </a>
+                                </li>
+                                <li class="header__list-item">
+                                    <div class="technical"></div>
+                                    <a class="link" href="#">
+                                        Мои навыки
+                                    </a>
+                                </li>
+                                <li class="header__list-item">
+                                    <div class="technical"></div>
+                                    <a class="link" href="#">
+                                        Мои работы
+                                    </a>
+                                </li>
+                                <li class="header__list-item">
+                                    <div class="technical"></div>
+                                    <a class="link" href="#" ">
+                                        Мои работы
+                                    </a>
+                                </li>
+                                <li class=" header__list-item">
+                                        <div class="technical"></div>
+                                        <a class="link" href="#" ">
+                                        Прайс-лист
+                                    </a>
+                                </li>
+                                <li class=" header__list-item">
+                                            <div class="technical"></div>
+                                            <a class="link" href="#contacts">
+                                                Контакты
+                                            </a>
+                                </li>
+                                <li class="header__list-item">
+                                    <a class="link" href="https://github.com/" target="_blank">
+                                        <img src="./images/Github.svg" alt="иконка git">
+                                    </a>
+                                    <a class="link" href="https://www.instagram.com/" target="_blank">
+                                        <img src="./images/Instagram.svg" alt="иконка Instagram">
+                                    </a>
+                                    <a class="link" href="https://www.facebook.com/" target="_blank">
+                                        <img src="./images/Facebook.svg" alt="иконка facebook">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
     </div>
-    <div class="about">
+    <!-- <div class="about">
         <div class="about__image">
             <img src="./images/Photo.jpg" />
         </div>
@@ -99,7 +170,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- <div class="skills">
 
         <h5>Навыки</h5>
@@ -189,7 +260,8 @@
             </div>
         </div>
     </div> -->
-    <div class="experience">
+
+    <div class=" experience" id="experience">
         <div class="experience__title-wrap">
             <h5>Опыт</h5>
             <div class="technical"></div>
@@ -265,8 +337,8 @@
             </div>
         </div>
     </div>
-    <div class="contacts">
-        <img src="./images/Photo.jpg" />
+    <div class="contacts" id="contacts">
+        <img src="./images/Photo.jpg" alt="моя фотография" />
         <div class="contacts__form">
             <h5>Контакты</h5>
             <div class="technical"></div>
@@ -274,14 +346,14 @@
             <div class="technical-line"></div>
             <p>Любым удобным для вас способом:</p>
             <div class="contacts__social">
-                <a href="" class="contacts__social-link">
-                    <img src="./images/Facebook.svg">
+                <a href="https://www.facebook.com/" class="contacts__social-link" target="_blank">
+                    <img src="./images/Facebook.svg" alt="иконка facebook">
                 </a>
-                <a href="" class="contacts__social-link">
-                    <img src="./images/Telegram.svg">
+                <a href="https://web.telegram.org/a/" class="contacts__social-link" target="_blank">
+                    <img src="./images/Telegram.svg" alt="иконка telegram">
                 </a>
-                <a href="" class="contacts__social-link">
-                    <img src="./images/Instagram.svg">
+                <a href="https://www.instagram.com/" class="contacts__social-link" target="_blank">
+                    <img src="./images/Instagram.svg" alt="иконка Instagram">
                 </a>
             </div>
             <p>Или оставьте ваши данные и я сама вам напишу:</p>
@@ -289,25 +361,27 @@
                 <div>
                     <fieldset>
                         <legend> Ваше имя</legend>
-                        <input type="text">
+                        <input class="input-name" type="text" name="name">
+                        <div class="error">Введите корректное имя</div>
                     </fieldset>
                     <fieldset>
                         <legend> Ваша почта</legend>
-                        <input type="text">
+                        <input class="input-email" type="text" name="email">
+                        <div class="error">Введите корректную почту</div>
                     </fieldset>
                 </div>
                 <fieldset class="textarea">
                     <legend> Ваша почта</legend>
-                    <textarea>
-
+                    <textarea name="comment">
                     </textarea>
                 </fieldset>
-                <button class="submit" type="button">
+                <button class="submit" type="submit">
                     <p>Отправить сообщение</p>
                 </button>
             </form>
         </div>
     </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>
